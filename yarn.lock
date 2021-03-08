@@ -3960,6 +3960,14 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
+currency-codes@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/currency-codes/-/currency-codes-2.1.0.tgz#6d84a1b7fec70ecb9ef64e57bf60f4271899044c"
+  integrity sha512-aASwFNP8VjZ0y0PWlSW7c9N/isYTLxK6OCbm7aVuQMk7dWO2zgup9KGiFQgeL9OGL5P/ulvCHcjQizmuEeZXtw==
+  dependencies:
+    first-match "~0.0.1"
+    nub "~0.0.0"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -5519,6 +5527,11 @@ findup-sync@^3.0.0:
     is-glob "^4.0.0"
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
+
+first-match@~0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/first-match/-/first-match-0.0.1.tgz#a60ec642700f0f437234ebb7ec3f382476e542fd"
+  integrity sha1-pg7GQnAPD0NyNOu37D84JHblQv0=
 
 flat-cache@^2.0.1:
   version "2.0.1"
@@ -9818,6 +9831,11 @@ nth-check@^1.0.2, nth-check@~1.0.1:
   dependencies:
     boolbase "~1.0.0"
 
+nub@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/nub/-/nub-0.0.0.tgz#b369bd32bdde66af59605c3b0520bc219dccc04f"
+  integrity sha1-s2m9Mr3eZq9ZYFw7BSC8IZ3MwE8=
+
 num2fraction@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
@@ -11925,7 +11943,7 @@ react-router@^3.0.0-alpha.1, react-router@^3.0.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react-select@^1.0.0-beta14, react-select@^1.0.0-rc.2:
+react-select@^1.0.0-rc.2, react-select@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-1.3.0.tgz#1828ad5bf7f3e42a835c7e2d8cb13b5c20714876"
   integrity sha512-g/QAU1HZrzSfxkwMAo/wzi6/ezdWye302RGZevsATec07hI/iSxcpB1hejFIp7V63DJ8mwuign6KmB3VjdlinQ==

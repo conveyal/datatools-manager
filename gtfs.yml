@@ -626,31 +626,8 @@
     helpContent: "The price field contains the fare price, in the unit specified by currency_type."
   - name: "currency_type"
     required: true
-    inputType: DROPDOWN
+    inputType: CURRENCY
     bulkEditEnabled: true
-    options:
-    - value: USD
-      text: US dollar (USD)
-    - value: AUD
-      text: Australian dollar (AUD)
-    - value: CAD
-      text: Canadian dollar (CAD)
-    - value: CHF
-      text: Swiss franc (CHF)
-    - value: CNH
-      text: Chinese renminbi (CNH)
-    - value: EUR
-      text: Euro (EUR)
-    - value: GBP
-      text: Pound sterling (GBP)
-    - value: JPY
-      text: Japanese yen (JPY)
-    - value: MXN
-      text: Mexican peso (MXN)
-    - value: NZD
-      text: New Zealand dollar (NZD)
-    - value: SEK
-      text: Swedish krona (SEK)
     columnWidth: 12
     helpContent: "The currency_type field defines the currency used to pay the fare. Please use the ISO 4217 alphabetical currency codes which can be found at the following URL:http://en.wikipedia.org/wiki/ISO_4217."
   - name: "payment_method"
