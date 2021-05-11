@@ -1,16 +1,17 @@
 // @flow
 
-import multi from '@conveyal/woonerf/store/multi'
-import promise from '@conveyal/woonerf/store/promise'
-import {middleware as fetchMiddleware} from '@conveyal/woonerf/fetch'
+import multi from '../multi'
+import promise from '../promise'
+import {middleware as fetchMiddleware} from '../fetch'
 import Enzyme, {mount} from 'enzyme'
-import EnzymeReactAdapter from 'enzyme-adapter-react-15.4'
+import EnzymeReactAdapter from 'enzyme-adapter-react-16'
 import {mountToJson} from 'enzyme-to-json'
 import clone from 'lodash/cloneDeep'
 import {get} from 'object-path'
 import React from 'react'
 import {Provider} from 'react-redux'
-import {routerReducer as routing} from 'react-router-redux'
+import { createBrowserHistory } from 'history'
+import { routerMiddleware } from 'connected-react-router'
 import {applyMiddleware, combineReducers, createStore} from 'redux'
 import configureStore from 'redux-mock-store'
 import thunkMiddleware from 'redux-thunk'
@@ -172,11 +173,11 @@ const storeMiddleWare = [
 /**
  * Creates a new store with reducers that will update state.
  */
+const history = createBrowserHistory()
 export function makeMockStore (initialState: AppState = getMockInitialState()) {
   const store = createStore(
     // $FlowFixMe not sure why this is giving a flow error
     combineReducers({
-      routing,
       ...{
         ...managerReducers,
         admin,
@@ -187,7 +188,10 @@ export function makeMockStore (initialState: AppState = getMockInitialState()) {
       }
     }),
     initialState,
-    applyMiddleware(...storeMiddleWare)
+    applyMiddleware(
+      routerMiddleware(history),
+      ...storeMiddleWare
+    )
   )
   // Helper method to snapshot a part of the state. Don't snapshot the entire
   // state, because the messages are huge!

@@ -7,13 +7,13 @@
 @import url(https://unpkg.com/leaflet@1.3.4/dist/leaflet.css);
 
 @import url(node_modules/bootstrap/dist/css/bootstrap.min.css);
-@import url(node_modules/react-bootstrap-table/dist/react-bootstrap-table.min.css);
-@import url(node_modules/react-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css);
+@import url(node_modules/react-bootstrap-table-next/dist/react-bootstrap-table2.min.css);
+@import url(node_modules/react-datetime/css/react-datetime.css);
 
-@import url(node_modules/react-select/dist/react-select.css);
+/* @import url(node_modules/react-select/dist/react-select.css); */
 
 @import url(node_modules/react-virtualized/styles.css);
-@import url(node_modules/react-virtualized-select/styles.css);
+/* @import url(node_modules/react-virtualized-select/styles.css); */
 @import url(node_modules/rc-slider/assets/index.css);
 @import url(node_modules/react-toggle/style.css);
 @import url(node_modules/react-toastify/dist/ReactToastify.min.css);
