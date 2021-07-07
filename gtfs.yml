@@ -23,6 +23,11 @@
     inputType: LANGUAGE
     columnWidth: 12
     helpContent: "The feed_lang field contains a IETF BCP 47 language code specifying the default language used for the text in this feed. This setting helps GTFS consumers choose capitalization rules and other language-specific settings for the feed. For an introduction to IETF BCP 47, please refer to http://www.rfc-editor.org/rfc/bcp/bcp47.txt and http://www.w3.org/International/articles/language-tags/."
+  - name: "default_lang"
+    required: false
+    inputType: LANGUAGE
+    columnWidth: 12
+    helpContent: "Defines the language used when the data consumer doesn’t know the language of the rider. It's often defined as en, English."
   - name: "feed_start_date"
     required: false
     inputType: DATE
@@ -67,6 +72,16 @@
     inputType: TEXT
     columnWidth: 12
     helpContent: "The feed publisher can specify a string here that indicates the current version of their GTFS feed. GTFS-consuming applications can display this value to help feed publishers determine whether the latest version of their feed has been incorporated."
+  - name: "feed_contact_email"
+    required: false
+    inputType: EMAIL
+    columnWidth: 12
+    helpContent: "Email address for communication regarding the GTFS dataset and data publishing practices."
+  - name: "feed_contact_url"
+    required: false
+    inputType: URL
+    columnWidth: 12
+    helpContent: "URL for contact information, a web-form, support desk, or other tools for communication regarding the GTFS dataset and data publishing practices."
 
 - id: agency
   name: agency.txt
@@ -139,7 +154,7 @@
     columnWidth: 6
     helpContent: "The stop_code field contains short text or a number that uniquely identifies the stop for passengers. Stop codes are often used in phone-based transit information systems or printed on stop signage to make it easier for riders to get a stop schedule or real-time arrival information for a particular stop."
   - name: "stop_name"
-    required: true
+    required: false
     inputType: TEXT
     bulkEditEnabled: true
     columnWidth: 12
@@ -151,12 +166,12 @@
     columnWidth: 12
     helpContent: "The stop_desc field contains a description of a stop. Please provide useful, quality information. Do not simply duplicate the name of the stop."
   - name: "stop_lat"
-    required: true
+    required: false
     inputType: LATITUDE
     columnWidth: 6
     helpContent: "The stop_lat field contains the latitude of a stop or station. The field value must be a valid WGS 84 latitude."
   - name: "stop_lon"
-    required: true
+    required: false
     inputType: LONGITUDE
     columnWidth: 6
     helpContent: "The stop_lon field contains the longitude of a stop or station. The field value must be a valid WGS 84 longitude value from -180 to 180."
@@ -180,8 +195,19 @@
       text: Stop (0)
     - value: '1'
       text: Station (1)
-    columnWidth: 12
+    - value: '2'
+      text: Entrance/Exit (2)
+    - value: '3'
+      text: Generic Node (3)
+    - value: '4'
+      text: Boarding Area (4)
+    columnWidth: 7
     helpContent: "The location_type field identifies whether this stop ID represents a stop or station. If no location type is specified, or the location_type is blank, stop IDs are treated as stops. Stations may have different properties from stops when they are represented on a map or used in trip planning."
+  - name: "platform_code"
+    required: false
+    inputType: TEXT
+    columnWidth: 5
+    helpContent: "Platform identifier for a platform stop (a stop belonging to a station). This should be just the platform identifier (eg. G or 3)."
   - name: "parent_station"
     required: false
     inputType: GTFS_STOP
@@ -297,6 +323,36 @@
     inputType: POSITIVE_INT
     columnWidth: 6
     helpContent: The route_sort_order field can be used to order the routes in a way which is ideal for presentation to customers. It must be a non-negative integer. Routes with smaller route_sort_order values should be displayed before routes with larger route_sort_order values.
+  - name: continuous_pickup
+    required: false
+    inputType: DROPDOWN
+    bulkEditEnabled: true
+    options:
+    - value: 0
+      text: Continuous stopping pickup (0)
+    - value: 1
+      text: No continuous stopping pickup (1)
+    - value: 2
+      text: Must phone an agency to arrange continuous stopping pickup (2)
+    - value: 3
+      text: Must coordinate with a driver to arrange continuous stopping pickup (3)
+    columnWidth: 12
+    helpContent: Indicates whether a rider can board the transit vehicle anywhere along the vehicle’s travel path.
+  - name: continuous_drop_off
+    required: false
+    inputType: DROPDOWN
+    bulkEditEnabled: true
+    options:
+    - value: 0
+      text: Continuous stopping drop-off (0)
+    - value: 1
+      text: No continuous stopping drop-off (1)
+    - value: 2
+      text: Must phone an agency to arrange continuous stopping drop-off (2)
+    - value: 3
+      text: Must coordinate with a driver to arrange continuous stopping drop-off (3)
+    columnWidth: 12
+    helpContent: Indicates whether a rider can alight from the transit vehicle at any point along the vehicle’s travel path.
   - name: route_url
     required: false
     inputType: URL
