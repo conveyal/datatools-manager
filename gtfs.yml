@@ -290,6 +290,154 @@
       text: Gondola
     - value: 7
       text: Funicular
+    - value: 11
+      text: Trolleybus
+    - value: 12
+      text: Monorail
+    - value: 100
+      text: Railway Service
+    - value: 100
+      text: Railway Service
+    - value: 101
+      text: High Speed Rail Service
+    - value: 102
+      text: Long Distance Trains
+    - value: 103
+      text: Inter Regional Rail Service
+    - value: 104
+      text: Car Transport Rail Service
+    - value: 105
+      text: Sleeper Rail Service
+    - value: 106
+      text: Regional Rail Service
+    - value: 107
+      text: Tourist Railway Service
+    - value: 108
+      text: Rail Shuttle (Within Complex)
+    - value: 109
+      text: Suburban Railway
+    - value: 110
+      text: Replacement Rail Service
+    - value: 111
+      text: Special Rail Service
+    - value: 112
+      text: Lorry Transport Rail Service
+    - value: 113
+      text: All Rail Services
+    - value: 114
+      text: Cross-Country Rail Service
+    - value: 115
+      text: Vehicle Transport Rail Service
+    - value: 116
+      text: Rack and Pinion Railway
+    - value: 117
+      text: Additional Rail Service
+    - value: 200
+      text: Coach Service
+    - value: 201
+      text: International Coach Service
+    - value: 202
+      text: National Coach Service
+    - value: 203
+      text: Shuttle Coach Service
+    - value: 204
+      text: Regional Coach Service
+    - value: 205
+      text: Special Coach Service
+    - value: 206
+      text: Sightseeing Coach Service
+    - value: 207
+      text: Tourist Coach Service
+    - value: 208
+      text: Commuter Coach Service
+    - value: 209
+      text: All Coach Services
+    - value: 400
+      text: Urban Railway Service
+    - value: 401
+      text: Metro Service
+    - value: 402
+      text: Underground Service
+    - value: 403
+      text: Urban Railway Service
+    - value: 404
+      text: All Urban Railway Services
+    - value: 700
+      text: Bus Service
+    - value: 701
+      text: Regional Bus Service
+    - value: 702
+      text: Express Bus Service
+    - value: 703
+      text: Stopping Bus Service
+    - value: 704
+      text: Local Bus Service
+    - value: 705
+      text: Night Bus Service
+    - value: 706
+      text: Post Bus Service
+    - value: 707
+      text: Special Needs Bus
+    - value: 708
+      text: Mobility Bus Service
+    - value: 709
+      text: Mobility Bus for Registered Disabled
+    - value: 710
+      text: Sightseeing Bus
+    - value: 711
+      text: Shuttle Bus
+    - value: 712
+      text: School Bus
+    - value: 713
+      text: School and Public Service Bus
+    - value: 714
+      text: Rail Replacement Bus Service
+    - value: 715
+      text: Demand and Response Bus Service
+    - value: 716
+      text: All Bus Services
+    - value: 900
+      text: Tram Service
+    - value: 901
+      text: City Tram Service
+    - value: 902
+      text: Local Tram Service
+    - value: 903
+      text: Regional Tram Service
+    - value: 904
+      text: Sightseeing Tram Service
+    - value: 905
+      text: Shuttle Tram Service
+    - value: 906
+      text: All Tram Services
+    - value: 1000
+      text: Water Transport Service
+    - value: 1100
+      text: Air Service
+    - value: 1200
+      text: Ferry Service
+    - value: 1300
+      text: Aerial Lift Service
+    - value: 1500
+      text: Taxi Service
+    - value: 1501
+      text: Communal Taxi Service
+    - value: 1502
+      text: Water Taxi Service
+    - value: 1503
+      text: Rail Taxi Service
+    - value: 1504
+      text: Bike Taxi Service
+    - value: 1505
+      text: Licensed Taxi Service
+    - value: 1506
+      text: Private Hire Service Vehicle
+    - value: 1507
+      text: All Taxi Services
+    - value: 1700
+      text: Miscellaneous Service
+    - value: 1702
+      text: Horse-drawn Carriage
     columnWidth: 6
     helpContent: The route_type field describes the type of transportation used on a route. Valid values for this field are...
   - name: route_sort_order
