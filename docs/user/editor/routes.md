@@ -15,37 +15,45 @@ Clicking the 🔍 button (in the top toolbar) with a route selected adjusts the 
 
 Some of the fields to be filled in are required before you can ‘Save and Continue’ and move to the next step, these are:
 
-- **Short name** – name of the service/route, this may just be a number
-- **Long name** – the full name of the route, often including the origin and destination
-- **Route Type** – the type of vehicle/transport used on the route
+- **Status** - takes the following values: 
+    - **In-Progress** - showing a route has not been completely entered
+    - **Pending Approval** - a route has all the information entered and is awaiting a senior person to sign it off
+    - **Approved** - all the above stages have been completed
+- **Publicly Visible?** - this must be set to "Yes" for the route to be included in a GTFS output. 
+- **route_id** - an identifier for the route. A randomly generated ID is provided by default.
+- **route_short_name** - name of the service/route, this may just be a number
+- **route_long_name** - the full name of the route, often including the origin and destination
+- **route_type** - the type of vehicle/transport used on the route
+
 Other fields in this section are optional and do not have to be filled in, these are:
-- **Description** – a description of the route, do not simply repeat the information in ‘Long name’
-- **URL** – a link to a webpage with information on the specific route, such as the timetable
-- **Color** – if a route has a color (for use in trip planners etc) it can be assigned here
-- **Text color** – if a route has a text color (for use in trip planners etc) it can be assigned here
-- **Comments** – any additional information about the route can be placed here
 
-Once all the required fields, and any of the desired optional fields, are filled in click ‘Save and continue’.
+- **agency_id** - the agency identifier from the defined agencies. Generally this field is automatically populated. 
+- **route_desc** - a description of the route, do not simply repeat the information in ‘Long name’
+- **route_sort_order** - Orders the routes for presentation to GTFS consumers. Routes with smaller route_sort_order values should be displayed first
+- **route_url** - a link to a webpage with information on the specific route, such as the timetable
+- **route_color** - if a route has a color (for use in trip planners etc) it can be assigned here
+- **route_text_color** - if a route has a text color (for use in trip planners etc) it can be assigned here
+- **Is route wheelchair accessible?** - Either "Yes", "No", or "No Information"
+- **Route branding URL** - a link to a webpage with route branding information
+- **Route branding asset** - a route image
 
+Once all the required fields, and any of the desired optional fields, are filled in click `Save`.
 
-## Review
-
-This final page allows you to show if a route has been completely entered, and if it has whether it has been checked and approved for inclusion in the GTFS feed.
-
-### Status
-
-There are three options for **Status**:
-
-- **In-Progress** - showing a route has not been completely entered.
-- **Pending Approval** - a route has all the information entered and is awaiting a senior person to sign it off
-- **Approved** - all the above stages have been completed.
-
-### Publicly visible
-
-Leave this box unchecked if you are entering a route that is not to be included in a GTFS output, or is in-progress.
 
 ## Trip Patterns
 
 Once you've created and saved a route, you can then begin creating trip patterns for the route.
 
 [Learn about editing trip patterns »](patterns)
+
+## Tutorial Video: Creating Routes
+The following video demonstrates the editing of a new route outlined above, in a step by step manner. 
+
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/WWm_FDmuMsY" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>

@@ -14,7 +14,7 @@ The Data Tools suite uses a system of user permissions to regulate access to var
 Three types of administrator-level users exist:
 
 - **Application-level administrator**: has full access to the Data Tools suite, including access to all projects and feed sources, the ability to create new projects, and the ability to create and manage users.
-- **Organization-level administrator**: has full access to all projects and feed sources for an organization. **Note:** this user type is only for users of non-enterprise implementations (i.e., https://gtfs.conveyal.com).
+- **Organization-level administrator**: has full access to all projects and feed sources for an organization. **Note:** this user type is only for users of non-enterprise implementations (i.e., https://gtfs.ibi-transit.com).
 - **Project-level administrator**: has full access to a single project, including all project-level permissions. Is not able to create new projects or administer users.
 
 ### Non-admin users
@@ -49,4 +49,4 @@ Already logged in, but still need to change your password? Simply click the user
 
 ![screenshot](../img/password-reset-logged-in.png)
 
-**Note:** if you do receive a password reset email within a few minutes, please check your spam/junk folder.
+**Note:** if you don't receive a password reset email within a few minutes, please check your spam/junk folder.

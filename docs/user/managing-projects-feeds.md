@@ -2,31 +2,31 @@
 
 ## Creating Projects
 
-Projects are created from the main Project listing page. Click the "New Project" button to create a new Project; a row for the new Project will appear in the table. Type a name and click the check button (or hit Enter/Return) to finish creating the Project.
+Projects are created from the main Project listing page. Click the `Create Project` button to create a new Project; a row for the new Project will appear in the table. Type a name and click the check button (or hit Enter/Return) to finish creating the Project.
 
-![screenshot](../img/create-project.png)
+![screen capture](../gif/create-project.gif)
 
 ## Managing Projects
 
 Clicking on a project in the main project listing will take you to the detailed project profile page:
 
-![screenshot](../img/project-profile.png)
+![screenshot](../gif/project-profile.gif)
 
-At the top of the page is the **Project Settings** panel which can be expanded to reveal optional properties that can be specified for the project. These include the location of the project's geographic coverage area (specified either as a single coordinate or a rectangular region), the default time zone, and default language. These values, when provided, are used to populate the corresponding feed-level properties when creating new feeds within this project.
+At the top of the page is the **Project Settings** panel which can be expanded to reveal optional properties that can be specified for the project. These include the location of the project's geographic coverage area (specified either as a single coordinate or a rectangular region) and the default time zone. These values, when provided, are used to populate the corresponding feed-level properties when creating new feeds within this project.
 
-Below the Project Settings panel is the **Feed Sources** panel. Feed Sources are the core of a project, and are documented in more detail below.
+To the left of the Project Settings panel is the **Feed Sources** panel. Feed Sources are the core of a project, and are documented in more detail below. Likewise the **Deployments** panel will be covered in more detail later in the documentation. 
 
 ## Creating a Feed Source
 
-Feed Sources are created from a Project's main profile page. Click the "New Feed" button to create a new feed; a row for the new Feed Source will appear in the table. Type a name and click the check button (or hit Enter/Return) to finish creating the Feed Source.
+Feed Sources are created from a Project's main profile page. Click the `+New` button from the `Actions` dropdown to create a new feed; Specify a name and optional feed source URL and click "Save". You may also adjust whether to automatically fetch the feed from the source URL and to make the feed deployable. 
 
 ## Managing Feed Sources
 
 After a Feed Source has been created, it will appear in the Project's table of Feed Sources. From this table, a basic summary of information for the feed is presented (including if the latest version has expired and how many validation issues it has).
 
-To access all settings for this Feed Source, click on the its name to access the full Feed Source profile page:
+To access the Feed Source Profile for this feed, click on its name. 
 
-![screenshot](../img/feed-profile.png)
+![screenshot](../gif/feed-profile.gif)
 
 At the top of the page is a set of tabs, which include:
 
@@ -36,7 +36,7 @@ At the top of the page is a set of tabs, which include:
     - Validation issues - view and filter list of validation issues
     - Version comments - leave and view comments specific to a Feed Version
 - **Snapshots** - list of Editor snapshots (or save points)
-- **Comments** - where users can leave and view comments specific to this Feed Source
+- **Notes** - where users can leave and view comments specific to this Feed Source
 - **Settings** - access to Feed Source settings
     - Editing basic Feed Source properties such as name, fetch URL, and public visibility
     - Viewing/editing settings provided by custom extensions
@@ -46,11 +46,11 @@ At the top of the page is a set of tabs, which include:
 
 Feed Versions are created from the main Feed Source profile page. There are three methods for creating new versions:
 
-1. **Manually Upload a File**: Select "Manually Uploaded" from the `+ Create new version` dropdown. The button next to the dropdown should now say "Upload." Click the "Upload" button to select a GTFS file from your local machine.
+1. **Manually Upload a File**: Select `Upload` from the `+ Create new version` dropdown to select a GTFS file from your local machine.
 
-2. **Fetch From A Remote URL**: Select "Fetch" from the `+ Create new version` dropdown. **Note:** to fetch a new version, the "Feed source fetch URL" property must be set to a valid GTFS URL under `Feed Source > Settings`.
+2. **Fetch From A Remote URL**: Select `Fetch` from the `+ Create new version` dropdown. **Note:** to fetch a new version, the "Feed source fetch URL" property must be set to a valid GTFS URL under `Feed Source > Settings`.
 
-3. **Import From the GTFS Editor**: Select "From snapshot" from the `+ Create new version` dropdown. The list of snapshots should now be visible showing any available snapshots of the feed in the Editor. Select the desired snapshot by clicking the "Publish" button to publish the snapshot as a new version.
+3. **Import From the GTFS Editor**: Select `From snapshot` from the `+ Create new version` dropdown. The list of snapshots should now be visible showing any available snapshots of the feed in the Editor. Select the desired snapshot by clicking the "Publish" button to publish the snapshot as a new version.
 
 4. **Service Period Merge** (certain Data Tools configurations only): If a Feed Source has two or more Feed Versions, a new Feed Version can be created by merging two versions representing a transit agency's service over different time periods. While viewing a particular Feed Version, click `Merge with version` (underneath the map view) to select which past version you would like to merge with.
 

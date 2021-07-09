@@ -4,7 +4,7 @@
 
 To begin editing calendars, click the 📅 button on the lefthand navigation bar.
 
-![screenshot](../../img/edit-calendars.png)
+![editing calendars](../../gif/edit-calendar.gif)
 
 Choose a calendar from the list to begin editing. To create a new calendar, click `+ New calendar`. **Note:** as with all newly created items (except patterns), the new calendar will not be saved until the save icon (💾) is clicked.
 
@@ -18,9 +18,8 @@ Choose a calendar from the list to begin editing. To create a new calendar, clic
 ## Editing schedule exceptions
 
 Schedule exceptions allow users to define days where special services should replace the regularly operating calendars. To create a schedule exception, click the `Exceptions` tab and then click `+ New exception` (replaces the "New calendar" button).
-<div class="img-center">
-  ![schedule exception](../../img/schedule-exception.png)
-</div>
+
+![schedule exception](../../gif/schedule-exception.gif)
 
 ## Exception details
 
@@ -41,3 +40,17 @@ There are a number of built-in exception types (or available schedules to run) t
 Click `Edit schedules` to begin creating or editing trips/frequencies for a trip pattern. You will be redirected to the Schedule Editor. For more information on creating schedules for a pattern, see [Trips](schedules).
 
 **Note**: At least one route, pattern and calendar must have been created to edit schedules.
+
+## Tutorial Video: Creating Calendars 
+The following video demonstrates the points outlined above. 
+
+<iframe
+    width="560" 
+    height="315"
+    margin-left="auto"
+    margin-right="auto"
+    src="https://www.youtube.com/embed/Ozvroe7EFHs" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>

@@ -18,9 +18,7 @@ Each selection has a set of statistics associated with it to give you a sense of
 ![schedule selector](../../img/timetable-selector.png)
 
 ## Schedule toolbar
-<div class="img-center">
-  ![schedule toolbar](../../img/schedule-toolbar.png)
-</div>
+![schedule-toolbar](../../img/schedule-toolbar.png)
 
 - **Add trip** - add blank trip (first timepoint is `00:00:00`)
 - **Duplicate trip(s)** - duplicate the last trip in the spreadsheet or whichever rows are selected
@@ -31,9 +29,8 @@ Each selection has a set of statistics associated with it to give you a sense of
 
 ## Selecting trips
 To select trips to offset, duplicate or delete, click the row number on the lefthand side of the row. To toggle selection of all trips, click the box in the upper lefthand corner.
-<div class="img-center">
-  ![select trips](../../img/select-trips.png)
-</div>
+
+![select trips](../../img/select-trips.png)
 
 ## Recognized time entry formats
 When entering times manually into the schedule editor they will automatically be converted to a standardized format `13:00:00`. The following time formats are automatically recognized and converted:
@@ -64,6 +61,18 @@ Frequency details include:
 - **Trip ID** - unique identifier for the trip
 - **Trip Headsign** - headsign for the trip
 - **Start/End Times** - define the beginning and end time for the interval over which the frequency operates
-- **Headway** - headway (in minutes) that the pattern runs during the time interval
+- **Headway** - headway (in seconds) that the pattern runs during the time interval
 
 ![editing frequencies](../../img/edit-frequencies.png)
+
+## Tutorial Video: Creating Timetables
+The following video demonstrates the creation and editing of timetables described above. 
+
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/ghr8IS-_fhc" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>

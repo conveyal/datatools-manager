@@ -1,5 +1,12 @@
 img[alt=screenshot] { width: 100%; }
-
+img {
+  display: block;
+  margin: auto;
+}
+iframe {
+  display: block;
+  margin: 12px auto;
+}
 /*Ignore first heading in page in TOC list*/
 li.toctree-l3:first-child {
     display: none;

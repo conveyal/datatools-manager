@@ -37,23 +37,21 @@ Click `Edit schedules` to begin creating or editing trips/frequencies for a trip
 ## Stop sequence
 ### Adding stops
 To begin constructing a pattern, click `+ Add stop`. You can then search for stops to add by name in the dropdown that appears or zoom into the map and add stops by clicking on them and clicking `+ Add stop`.
-<div class="img-center">
-![add stop from dropdown](../../img/pattern-add-stop.png)
-</div>
+
+![adding stop](../../img/pattern-add-stop.png)
+
 
 As you add stops, the pattern shape will update according to the street network. Keep selecting and adding stops in the sequence the route passes through them until the route is complete.
 
 ### Inserting stops mid-sequence
 If you realize you have missed a stop from the sequence it can be added in after the fact. When adding via the dropdown, stops can only be added to the end of the sequence; however, if you're adding via the map, you can choose where exactly to insert the stop.
-<div class="img-center">
-![insert stop from map](../../img/pattern-insert-stop.png)
-</div>
+
+![inserting stop](../../img/pattern-insert-stop.png)
 
 ### Pattern stop toolbar
 The pattern stop toolbar can be found by clicking the pattern stop in the map view.
-<div class="img-center">
+
 ![pattern stop toolbar](../../img/pattern-stop-toolbar.png)
-</div>
 
 - **Save** - saves any edits to the travel and dwell times.
 - **Edit** - allows user to begin editing the stop's details (clicking the browser **Back** button will bring you back to editing the pattern). **Note**: be sure you have saved any pattern information before jumping to edit a stop.
@@ -62,11 +60,10 @@ The pattern stop toolbar can be found by clicking the pattern stop in the map vi
 
 ### Changing the order of stops
 If a stop is in the wrong order, you can click and drag the stop from the list view into the correct sequence. The sequence displayed on the stop being dragged will only update after being dropped into place.
-<div class="img-center">
-![drag and drop pattern stop](../../img/pattern-stop-order.png)
-</div>
 
-**Note**: if inserting stops mid-sequence or changing the order of stops, the pattern shape will not update automatically. You must edit the pattern manually or click the `Create` button to regenerate the pattern shape from the stops.
+![pattern stop order](../../img/pattern-stop-order.png)
+
+**Note**: if inserting stops mid-sequence or changing the order of stops, the pattern shape will not update automatically. You must edit the pattern manually or click the `From Stops` button to regenerate the pattern shape from the stops.
 
 ### Removing stops
 Stops can be removed from the pattern by clicking the red 🗑 button found in the expanded stop card or by clicking the pattern stop on the map view.
@@ -86,6 +83,16 @@ Individual timings for each pattern stop can also be assigned either through exp
 - Travel time – the time it took to get from the previous station (should be 00:00 on the first stop of the sequence)
 - Dwell time – the time the vehicle rests at the stop
 
+## Tutorial Video
+The following video demonstrates how to create patterns as outlined above, in a step by step manner. 
+<iframe 
+    width="560"
+    height="315" 
+    src="https://www.youtube.com/embed/ruYYK09MxUc" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
 <!-- TODO: clear pattern stops feature -->
 <!-- - Clear pattern – removes stop sequence from pattern -->
 
@@ -112,11 +119,12 @@ Once editing a pattern shape, there are a few behaviors you should be aware of:
 
 ### Edit settings
 - **Snap to streets** - snaps segments between handles and stops to streets. If unchecked, segments will form straight lines between handles and stops (e.g., for drawing shapes for rail lines).
-- **Snap to stops** - keeps shape segments snapped to stops. If unchecked, stop handles will become draggable. In most cases, this setting should remain checked.
+- **Hide stop handles** - keeps shape segments snapped to stops. If unchecked, stop handles will become draggable. In most cases, this setting should remain checked.
+- **Hide inactive segments** - toggles whether to show segments that are not currently being edited. 
 - **Show stops** - toggles whether stops are visible because sometimes stop markers can get in the way when trying to draw shapes.
-<div class="img-center">
-![pattern shape editing options](../../img/pattern-shape-panel.png)
-</div>
+- **Show tooltips** - toggles whether to show tips when hovering over a segment, e.g. "Click to edit segment" or "Click to add control point". 
+
+![pattern shape panel](../../img/pattern-shape-panel.png)
 
 ### Editing modes
 
@@ -131,3 +139,14 @@ There are a few different editing modes that allow for the quick and easy creati
     - **Every *n* intersections** - the number of intersections at which each new stop should be placed
 
 **Note**: the last three advanced editing modes should only be used when creating routes in new areas where stops don't already exist.
+
+## Tutorial Video: Editing Patterns 
+The following video demonstrates the steps for editing patterns, as outlined above. 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/0UgG9pUUSxk" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
