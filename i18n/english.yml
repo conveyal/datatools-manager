@@ -253,6 +253,10 @@ components:
         fetchedAutomatically: Fetched Automatically
         manuallyUploaded: Manually Uploaded
         producedInHouse: Produced In-house
+        producedInHouseGtfsPlus: Produced In-house (GTFS+)
+        regionalMerge: Regional Merge
+        servicePeriodMerge: Service Period Merge
+        versionClone: Version Clone
         title: Retrieval Method
       snapshot: Editor Snapshot
       title: Settings
